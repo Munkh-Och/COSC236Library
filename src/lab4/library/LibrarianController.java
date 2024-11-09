@@ -15,7 +15,7 @@ public class LibrarianController {
 	        Member member = library.findMemberByName(memberName);
 	        Book book = library.findBookByTitle(bookTitle);
 	        
-	        //if member and book is existing
+	        //if member and book is existing:
 	        if (member != null && book != null) {
 	            member.borrowBook(book);
 	        } else {

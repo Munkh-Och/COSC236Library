@@ -16,7 +16,7 @@ public class Library {
 	private List<Book> catalog;
 	private List<Member> members;
 
-	// TODO: implement functionality of Member class
+	// DONE: implement functionality of Member class
 	public Library() {
 		catalog = new ArrayList<>();
 		members = new ArrayList<>();
