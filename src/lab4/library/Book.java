@@ -8,5 +8,6 @@ public class Book {
 	private boolean isAvailable; 
 	
 	// TODO: implement Book functionality 
+	//KEN IS THE BEST!!!!!
 	
 }
