@@ -24,7 +24,12 @@ public class Library {
 	
 	public void addBook(Book book) {
 		catalog.add(book);
-		System.out.println(book.getTitle() + " added to the library catalog");
+		System.out.println(book.getTitle() + " added to the library catalog.");
+	}
+	
+	public void removeBook(Book book) {
+		catalog.remove(book);
+		System.out.println(book.getTitle() + " removed from the library catalog.");
 	}
 	
 	public void registerMember(Member member) {
@@ -32,6 +37,10 @@ public class Library {
 		System.out.println(member.getName() + " registered as a library member.");
 	}
 	
+	public void removeMember(Member member) {
+		members.remove(member);
+		System.out.println(member.getName() + " got removed from being library member.");
+	}
 	public Book findBookByTitle(String title) {
         for (Book book : catalog) {
             if (book.getTitle().equalsIgnoreCase(title)) {
@@ -49,4 +58,7 @@ public class Library {
         }
         return null;
     }
+	public List<Book> getCatalog(){
+		return catalog;
+	}
 }
