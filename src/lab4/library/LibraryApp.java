@@ -16,8 +16,8 @@ public class LibraryApp {
         library.addBook(nineteenEightyFour);
         library.addBook(mobyDick);
 
-        Member alice = new Member("Alice");
-        Member bob = new Member("Bob");
+        Member alice = new Member("Alice", "1");
+        Member bob = new Member("Bob", "2");
         
         // Registering members to the Library
         System.out.println("\nRegistering members:");

@@ -11,9 +11,11 @@ public class Member {
 	private String name;
 	// private borrowedbBooks TODO: implement collection of borrowed books
 	private List<Book> borrowedBooks;
+	private String memberID;
 	// TODO: implement functionality of Member class
-	public Member(String name) {
+	public Member(String name, String memberID) {
 		this.name = name;
+		this.memberID = memberID;
 		this.borrowedBooks = new ArrayList<>();
 	}
 	
